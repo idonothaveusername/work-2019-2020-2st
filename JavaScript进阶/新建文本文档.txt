@@ -1,0 +1,23 @@
+1、hasOwnProperty
+2、原型   原型链  undefined
+3、AD
+4、ABCD
+5、D
+6、
+7、
+代码输出的情况：
+a()
+b()
+a()
+报错
+原因：
+F.a(): F自身: 没有 ---> F.__proto__(Function.prototype): 没有 --->F.__proto__.__proto__(Object.prototype): 输出 a()
+F.b(): F自身: 没有 ---> F.__proto__(Function.prototype): 输出b()
+f.a(): f自身: 没有 ---> f.__proto__(Object.prototype): 输出a()
+f.b(): f自身: 没有 ---> f.__proto__(Object.prototype): 没有 ---> f.__proto__.__proto__ (Object.prototype.__proto__): 找不到，报错
+
+
+8、a.__proto__=>Object.prototype    Object.prototype.__proto__=>null
+img.__proto__=>Object.prototype    Object.prototype.__proto__=>null
+
+

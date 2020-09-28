@@ -1,0 +1,3 @@
+如果有几个报文的ACK序号都一样，并且这些报文的Sequence Number都不一样，并且后一个Sequence Number为前一个Sequence Number加上前一个报文大小再加上1的话，肯定是TCP segment了，对于没有ACK标志时，则无法判断。
+
+如果这些包的总和足够小或者链路的MTU足够大，能够一次性发送过去的话，不会显示reassembled PDU，如果不能，很显然要拆成几个分段发送了，如果中间的那个分段不能被SSL协议的原语识别，那么就会被标识成reassembled PDU。

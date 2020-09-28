@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	// var pattern = /<\/?\w+\/?>/gi;
+ //    var str = "<div>这里是 div<p>里面的段落</p></div>";
+ //    console.log(str);
+ //    console.log(str.replace(pattern,''));
+
+
+ 	var students = [
+	  { id: 11, name: '小张', score: 80 },
+	  { id: 22, name: '小王', score: 95 },
+	  { id: 33, name: '小李', score: 50 },
+	  { id: 44, name: '小刘', score: 45 },
+	  { id: 55, name: '小徐', score: 84 },
+	  { id: 66, name: '小红', score: 78 },
+	  { id: 77, name: '小白', score: 100 },
+	];
+
+	//任务1： 获取最高score值 （map,Math.max,apply）
+	var scores = students.map(function(a){return a.score});
+	var max = Math.max.apply(this,scores);
+	console.log(max);
+
+	//任务2： 判断是否包含不及格学生（小于60不及格）（包含打印true,不包含打印false）（some）
+	var judge = students.some(function(student){return student.score<60;});
+	console.log(judge);
+
+	//任务3.  求所有学生的平均分（reduce）
+	var average = students.reduce(function(a,b){return a + b.score;},0)/students.length;
+	console.log(average);
+
+	//任务4.  找出不及格学生的所有名字（filter）
+	var arr = students.filter(function(student){return student.score<60;});
+	arr.forEach(function(a){console.log(a.name)});
+
+	//任务5.  按成绩从高到低排序（sort）
+	students.sort(function(a,b){return b.score - a.score;});
+	console.log(students);
+</script>
+</html>

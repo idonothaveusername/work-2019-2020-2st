@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	// function max(arr) {
+	// 	var temp;
+ //    	for(var i=0; i < arr.length - 1; i++){
+ //        	for(var j = arr.length - 1; j > i; j--){
+ //            	if(arr[j] < arr[j-1]){
+ //                	temp = arr[j];
+ //                	arr[j] = arr[j-1];
+ //                	arr[j-1] = temp;
+ //            	}
+ //        	}
+ //    	}
+	// 	return arr[arr.length - 1]
+	// }
+	// var a = [1,11,5,7];
+	// console.log(max(a));
+
+	// function foo(x){
+	// 	return function(){
+	// 		x.count = x.count?x.count + 1:1;
+	// 	};
+	// }
+	// var age = new Number(2);
+	// var bar =foo(age);
+	// bar(10);
+	// bar(10);
+	// console.log(age.count);
+
+	// var foo = 1;
+	// function fun(){
+	//     console.log(foo);
+	//     var foo = 2;
+	//     console.log(foo);
+	// }
+	// fun();
+
+	// var i = 10;
+	// function a(){
+	// 	i = 20;
+	// 	console.log(i);
+	// 	for(var i = 1;i < 6;i++){
+	// 		console.log(i);
+	// 	}
+	// 	console.log(this.i);
+	// 	console.log(i);
+	// }
+	// a();
+	// console.log(i);
+
+	//20
+	// var foo = {n:1};
+	// (function(foo){
+	// 	console.log(foo.n);
+	// 	foo.n = 3;
+	// 	var foo = {n:2};
+	// 	console.log(foo.n);
+	// })(foo);
+	// console.log(foo.n);
+	//19
+	// var bird = {
+	// 	size:"small"
+	// };
+	// var mouse = {
+	// 	name:"tom",
+	// 	small:true
+	// };
+	// console.log(mouse.size);//undefined
+	// console.log(mouse.bird.size);
+	// console.log(mouse[bird.size]);
+	// console.log(mouse[bird["size"]]);
+	//18
+	// (function(){
+	// 	return typeof arguments;
+	// })();
+	// 16
+	// var x = 5;
+	// o={
+	// 	x:10,
+	// 	show:function(x){
+	// 		var x = 20;
+	// 		console.log(this.x);
+	// 		(function(){
+	// 			console.log(this.x);
+	// 		})();
+	// 		function show2(x){
+	// 			console.log(this.x);
+	// 		}
+	// 		show2(x);
+	// 	}
+	// };
+	// o.show();
+	//15
+	// var obj = {
+	// 	fn1:function(){
+	// 		console.log(this);
+	// 		var that = this;
+	// 		var f = function(){
+	// 			console.log(that);
+	// 			console.log(this);
+	// 		};
+	// 		return f;
+	// 	}
+	// };
+	// obj.fn1()();
+	//14
+	// var data = [];
+	// for(var i=0;i<3;i++){
+	// 	data[i] = function(){
+	// 		console.log(i);
+	// 	};
+	// }
+	// data[0]();
+	// data[1]();
+	// data[2]();
+	// data[3]();
+	//13
+	// var tmp = 10;
+	// function foo(x){
+	// 	var tmp = 3;
+	// 	return function(y){
+	// 		console.log(x+y+ ++tmp);
+	// 	};
+	// }
+	// var fee = foo(2);
+	// fee(10);
+	// fee(10);
+	// fee(10);
+	// 12
+	// var length = 10;
+	// function fn(){
+	// 	console.log(this.length);
+	// }
+	// var obj = {
+	// 	length:5,
+	// 	method:function(fn){
+	// 		fn();
+	// 		arguments[0]();
+	// 		fn.call(obj,12);
+	// 	}
+	// };
+	// obj.method(fn,1);
+	// 9
+	// function test(){
+	// 	var n = 999;
+	// 	function add(){
+	// 		console.log(++n);
+	// 		console.log(this.n);
+	// 	}
+	// 	return{
+	// 		n:n,
+	// 		add:add
+	// 	};
+	// }
+	// var result = test();
+	// result.add();
+	// result.add();
+</script>
+</html>

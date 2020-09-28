@@ -1,0 +1,20 @@
+.back{top:35px;left:35px;
+width:71px;height:131px;background: url("sprites.png") no-repeat -245px -0px;}
+.collection{top:43px;left:37px;
+width:126px;height:114px;background: url("sprites.png") no-repeat -132px -252px;}
+.list{top:37px;left:25px;
+width:150px;height:126px;background: url("sprites.png") no-repeat -0px -0px;}
+.mark{top:38px;left:34px;
+width:133px;height:126px;background: url("sprites.png") no-repeat -0px -126px;}
+.next{top:37px;left:65px;
+width:70px;height:129px;background: url("sprites.png") no-repeat -258px -131px;}
+.page_first{top:37px;left:56px;
+width:95px;height:126px;background: url("sprites.png") no-repeat -150px -0px;}
+.page_last{top:37px;left:49px;
+width:95px;height:126px;background: url("sprites.png") no-repeat -133px -126px;}
+.page_turning_left{top:50px;left:75px;
+width:50px;height:100px;background: url("sprites.png") no-repeat -308px -260px;}
+.page_turning_right{top:50px;left:75px;
+width:50px;height:100px;background: url("sprites.png") no-repeat -258px -260px;}
+.top{top:34px;left:34px;
+width:132px;height:132px;background: url("sprites.png") no-repeat -0px -252px;}

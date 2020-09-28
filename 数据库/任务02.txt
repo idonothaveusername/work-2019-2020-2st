@@ -1,0 +1,23 @@
+一、请写出四个关系的关系模式并说明每个关系的主码及相关外码。
+表（一）Student
+关系模式：Student (Sno,Sname,Ssex,Sbirthday,class)     
+主码：Sno   无相关外码
+表（二）Course
+关系模式：Course(Cno,Cname,Tno)      
+主码：Cno     相关外码： Tno
+表（三）Score
+关系模式：Score(Sno,Cno,Degree)       
+主码：Sno+Cno     相关外码：Sno、Cno
+表（四）Teacher
+关系模式：Teacher(Tno,Tname,Tsex,Tbirthday,Prof,Depart)      
+主码：Tno     无相关外码
+二、结合题目说明什么是实体完整性、参照完整性、用户定义的完整性，并给出题目示例
+实体完整性要求每个表都有唯一标识符，符合实体完整性规则，即若属性A是基本类型R的主属性，则属性A不能取空值；示例：在表（一）Student中，
+Sno为关系Student的主属性，它不能取空值。
+
+参照完整性要求关系中不允许引用不存在的实体且符合参照完整性规则，即若属性（或属性组）F是基本关系R的外码，它与基本关系S的主码Ks相对应（基本关系R和S不一定是不同的关系），则对于R中每个元组在F上的值必须为：
+或者取空值(F的每个属性值均为空值)或者等于S中某个元组的主码值；示例：
+表（二）Course中Tno为基本关系Course的外码，同时Tno也是基本关系 Teacher中的主码，因此基本关系Course中的Tno的值要么为空，要么等于基本关系 Teacher中Tno的某个值。
+
+用户定义的完整性是针对某一具体关系数据库的约束条件，反映某一具体应用所涉及的数据必须满足的语义要求。示例：对于表（四）Teacher，主码 Tno必须取唯一值且非空 ，Tsex属性只能取值{男，女}。
+
